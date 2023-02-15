@@ -1,0 +1,8 @@
+package job.library
+
+@Library('generic-nodejs-script-pipeline') _
+
+dockerPipeline([
+        scriptName: "emailTest",
+        ignoreBranch: true
+])
